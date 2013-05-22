@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		03C51894174D047700A355C4 /* osxans.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D5880190B80A4F800200116 /* osxans.mm */; };
 		3C03ED921134205A009DE406 /* socket_resolve.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C03ED911134205A009DE406 /* socket_resolve.cpp */; };
 		3C0A3CC410BAF6120074D630 /* iquantization.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C0A3CC310BAF6120074D630 /* iquantization.cpp */; };
 		4C6F241E1529B33000C5AFB6 /* osxsnapshot.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C6F241D1529B33000C5AFB6 /* osxsnapshot.mm */; };
@@ -437,7 +438,6 @@
 		4DEE2AD60FDE42710009423C /* objptr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D587E7C0B8096FD00200116 /* objptr.cpp */; };
 		4DEE2AD70FDE42710009423C /* opensslsocket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D587E3B0B8096FD00200116 /* opensslsocket.cpp */; };
 		4DEE2AD80FDE42710009423C /* operator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D587E340B8096FD00200116 /* operator.cpp */; };
-		4DEE2AD90FDE42710009423C /* osxans.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D5880190B80A4F800200116 /* osxans.mm */; };
 		4DEE2ADA0FDE42710009423C /* osxcoreimage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D5880140B80A4F800200116 /* osxcoreimage.cpp */; };
 		4DEE2ADB0FDE42710009423C /* osxclipboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D61BD980CCF74C800D74FDB /* osxclipboard.cpp */; };
 		4DEE2ADC0FDE42710009423C /* osxcontext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4D5880170B80A4F800200116 /* osxcontext.cpp */; };
@@ -3159,6 +3159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D221F46171D632600E7E557 /* startupstack.cpp in Sources */,
+				03C51894174D047700A355C4 /* osxans.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3246,7 +3247,6 @@
 				4DEE2AD60FDE42710009423C /* objptr.cpp in Sources */,
 				4DEE2AD70FDE42710009423C /* opensslsocket.cpp in Sources */,
 				4DEE2AD80FDE42710009423C /* operator.cpp in Sources */,
-				4DEE2AD90FDE42710009423C /* osxans.mm in Sources */,
 				4DEE2ADA0FDE42710009423C /* osxcoreimage.cpp in Sources */,
 				4DEE2ADB0FDE42710009423C /* osxclipboard.cpp in Sources */,
 				4DEE2ADC0FDE42710009423C /* osxcontext.cpp in Sources */,
@@ -3591,6 +3591,8 @@
 		4D222011171D72A500E7E557 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				"GCC_VERSION[sdk=macosx10.6]" = com.apple.compilers.llvmgcc42;
 				PRODUCT_NAME = version;
 			};
 			name = Debug;
@@ -3598,6 +3600,8 @@
 		4D222012171D72A500E7E557 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				"GCC_VERSION[sdk=macosx10.6]" = com.apple.compilers.llvmgcc42;
 				PRODUCT_NAME = version;
 			};
 			name = Release;
@@ -3632,6 +3636,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4D587DB40B80949B00200116 /* Debug.xcconfig */;
 			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				"GCC_VERSION[sdk=macosx10.6]" = com.apple.compilers.llvmgcc42;
 			};
 			name = Debug;
 		};
@@ -3639,12 +3645,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4D587DB20B80949B00200116 /* Release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				"GCC_VERSION[sdk=macosx10.6]" = com.apple.compilers.llvmgcc42;
 			};
 			name = Release;
 		};
 		4D587DA70B80945B00200116 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				"GCC_VERSION[sdk=macosx10.6]" = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "rsrc/Revolution-Info.plist";
 				PRODUCT_NAME = "LiveCode-Community";
 				WRAPPER_EXTENSION = app;
@@ -3654,6 +3665,9 @@
 		4D587DA80B80945B00200116 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				"GCC_VERSION[sdk=macosx10.6]" = com.apple.compilers.llvmgcc42;
 				INFOPLIST_FILE = "rsrc/Revolution-Info.plist";
 				PRODUCT_NAME = "LiveCode-Community";
 				WRAPPER_EXTENSION = app;
